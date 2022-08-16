@@ -41,12 +41,6 @@ print(len(webContent))
 titles = fa('<title>(.*?)</title>',webContent)
 mp3_URLs = fa('http.*?mp3',webContent)
 
-for i in mp3_URLs[:10]:
-    print(i)
-
-##for i in range(len(mp3_URLs)):
-##    print('{:}\n\t{:}'.format(titles[i],mp3_URLs[i]))
-
 print('Found {:} episodes.'.format(len(mp3_URLs)))
 
 ans = input('Download file? "y" or "n"\n')
